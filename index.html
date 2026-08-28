@@ -1,36 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FINAPP</title>
-    <script src="tailwind.js"></script>    
-</head>
-<body>
+    <script src="tailwind.js"></script>
+  </head>
+  <body>
     <header class="flex items-center gap-6 px-6 py-5 lg:px-12">
-        <a class="shrink-0 text-xl font-bold tracking-tight text-slate-900" href="index.html">FINAPP</a>
+      <a class="shrink-0" href="index.html" aria-label="FINAPP home">
+        <img
+          class="h-10 w-auto object-contain"
+          src="logo.png"
+          alt="FINAPP logo"
+        />
+      </a>
 
-        <nav class="flex flex-1 justify-center" aria-label="Main navigation">
-            <ul class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-slate-600">
-                <li><a class="transition-colors hover:text-slate-950" href="#">Home</a></li>
-                <li><a class="transition-colors hover:text-slate-950" href="#">About</a></li>
-                <li><a class="transition-colors hover:text-slate-950" href="#">Services</a></li>
-                <li><a class="transition-colors hover:text-slate-950" href="#">Pricing</a></li>
-                <li><a class="transition-colors hover:text-slate-950" href="#">Work</a></li>
-                <li><a class="transition-colors hover:text-slate-950" href="#">Resources</a></li>
-                <li><a class="transition-colors hover:text-slate-950" href="#">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="flex flex-1 justify-center" aria-label="Main navigation">
+        <ul
+          class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-slate-600"
+        >
+          <li>
+            <a class="transition-colors hover:text-slate-950" href="#">Home</a>
+          </li>
+          <li>
+            <a class="transition-colors hover:text-slate-950" href="#">About</a>
+          </li>
+          <li>
+            <a class="transition-colors hover:text-slate-950" href="#"
+              >Services</a
+            >
+          </li>
 
-        <button class="shrink-0 rounded-md bg-[#635BFF] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90" type="button">Sign Up</button>
+          <li>
+            <a class="transition-colors hover:text-slate-950" href="#">Work</a>
+          </li>
+            <a class="transition-colors hover:text-slate-950" href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button
+        class="shrink-0 rounded-full bg-[#635BFF] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+        type="button"
+      >
+        Sign up
+      </button>
     </header>
     <main>
-        <section class="p-[20px 10px]">
-            <h2 class="font font-bold">Banking you can <br> plainly see, security <br> you can always trust</h2>
-            <p class="font font-bold">Manage your daily payments,savings and <br> transfer with zero hidden fees.</p>
-          
-        </section>
+      <section
+        class="relative py-[20px] px-[80px] bg-[url('background.png')] bg-cover bg-center bg-no-repeat"
+      >
+        <div class="absolute inset-0 z-0 bg-black/60"></div>
+
+        <div class="relative z-10">
+          <h2 class="text-2xl text-white">
+            Banking you can <br />
+            plainly see, security <br />
+            you can always trust
+          </h2>
+          <p class="text-sm mt-2 text-white">
+            Manage your daily payments,savings and <br />
+            transfer with zero hidden fees.
+          </p>
+          <div class="flex gap-5 mt-6">
+            <button
+              class="shrink-0 rounded-full bg-[#635BFF] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+              type="button"
+            >
+              Get stated free
+            </button>
+            <button
+              class="shrink-0 rounded-full text-white border border-[#635BFF] px-5 py-2.5 text-sm font-semibold transition-opacity hover:opacity-90"
+              type="button"
+            >
+              See how we protect you
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="font-bold p-[20px]">
+        <h2>Build Your Absolute Peace of Mind</h2>
+      </section>
     </main>
-    </p>
-</body>
+  </body>
 </html>
