@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FINAPP</title>
+    <title>Services | FINAPP</title>
     <script src="tailwind.js"></script>
   </head>
-  <body>
+  <body class="bg-slate-50 text-slate-900">
     <header class="flex items-center gap-6 px-6 py-5 lg:px-12">
       <a class="shrink-0" href="index.html" aria-label="FINAPP home">
         <img
@@ -47,48 +47,198 @@
         </ul>
       </nav>
 
-
       <a
-        href="#"
-        class="shrink-0 rounded-full bg-[#635BFF] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
-      >
-      </a>
-       <a
-        href="#signup-form"
+        href="signup.html"
         class="shrink-0 rounded-full bg-[#635BFF] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
       >
         Sign up
       </a>
     </header>
+
     <main>
       <section
-        class="relative py-[100px] px-[100px] bg-[url('background-3.png')] bg-cover bg-center bg-no-repeat"
+        class="relative overflow-hidden bg-[url('background-3.png')] bg-cover bg-center bg-no-repeat py-24 px-5 lg:px-20"
       >
-        <div class="absolute inset-0 z-0 bg-black/60"></div>
-        <h1 class="relative z-10 text-4xl font-bold text-white text-center">
-          SERVICES
-        </h1>
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 mx-auto max-w-3xl text-center text-white">
+          <p
+            class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-[#bfc2ff]"
+          >
+            What we offer
+          </p>
+          <h1 class="text-4xl font-bold md:text-5xl">
+            Smart services for modern money management
+          </h1>
+          <p class="mt-4 text-base text-slate-200 md:text-lg">
+            FINAPP brings together secure banking, instant payments, and smarter
+            savings tools in one seamless experience.
+          </p>
+        </div>
       </section>
-      <section class="px-5 py-12 lg:px-20">
-        <div class="grid gap-5 md:grid-cols-2">
-          <div class="overflow-hidden rounded-2xl bg-slate-40 aspect-[4/3]">
+
+      <section class="px-5 py-14 lg:px-20">
+        <div class="mb-10 text-center">
+          <p
+            class="text-sm font-semibold uppercase tracking-[0.25em] text-[#635BFF]"
+          >
+            Solutions
+          </p>
+          <h2 class="mt-3 text-3xl font-bold text-slate-950 md:text-4xl">
+            Built for everyday financial confidence
+          </h2>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article
+            class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200"
+          >
+            <div
+              class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#635BFF]/10 text-xl text-[#635BFF]"
+            >
+              ↗
+            </div>
+            <h3 class="text-xl font-bold text-slate-950">Instant Transfers</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Send funds in seconds with real-time updates and payment
+              confirmations.
+            </p>
+          </article>
+
+          <article
+            class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200"
+          >
+            <div
+              class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#635BFF]/10 text-xl text-[#635BFF]"
+            >
+              ◎
+            </div>
+            <h3 class="text-xl font-bold text-slate-950">Smart Savings</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Automate savings plans, set goals, and track long-term progress
+              with ease.
+            </p>
+          </article>
+
+          <article
+            class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200"
+          >
+            <div
+              class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#635BFF]/10 text-xl text-[#635BFF]"
+            >
+              ▣
+            </div>
+            <h3 class="text-xl font-bold text-slate-950">Budget Insights</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              See where your money is going with smart analytics and spending
+              alerts.
+            </p>
+          </article>
+
+          <article
+            class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200"
+          >
+            <div
+              class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#635BFF]/10 text-xl text-[#635BFF]"
+            >
+              🔒
+            </div>
+            <h3 class="text-xl font-bold text-slate-950">Security First</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Protect your cash with layered security, account monitoring, and
+              trusted controls.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="px-5 pb-14 lg:px-20">
+        <div
+          class="grid gap-8 rounded-[30px] bg-[#f5f5f5] p-6 md:grid-cols-2 md:p-10"
+        >
+          <div class="overflow-hidden rounded-2xl bg-slate-200">
             <img
               class="h-full w-full object-cover"
-              src="background-6.jpg"
+              src="./woman.png"
               alt="Financial planning on a laptop"
             />
           </div>
-          <div class="overflow-hidden rounded-2xl bg-slate-0 aspect-[4/3]">
-            <img
-              class="h-full w-full object-cover"
-              src="background-5.png"
-              alt="Person using a mobile banking app"
-            />
+
+          <div class="flex flex-col justify-center">
+            <p
+              class="text-sm font-semibold uppercase tracking-[0.25em] text-[#635BFF]"
+            >
+              Why FINAPP
+            </p>
+            <h2 class="mt-3 text-3xl font-bold text-slate-950">
+              Everything your finances need, in one secure place
+            </h2>
+            <p class="mt-4 text-base leading-7 text-slate-600">
+              We make it easier to manage daily spending, build savings, and
+              stay in control of your money with clarity and confidence.
+            </p>
+
+            <ul class="mt-6 space-y-4 text-slate-700">
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#635BFF] text-xs font-bold text-white"
+                  >✓</span
+                >
+                <span
+                  >Access personal and business-friendly banking tools.</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#635BFF] text-xs font-bold text-white"
+                  >✓</span
+                >
+                <span
+                  >Enjoy instant notifications for transfers and spending
+                  activity.</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#635BFF] text-xs font-bold text-white"
+                  >✓</span
+                >
+                <span
+                  >Grow your savings with financial guidance and transparent
+                  tracking.</span
+                >
+              </li>
+            </ul>
           </div>
-          <div
-            class="mx-auto aspect-[16/9] w-full max-w-3xl overflow-hidden rounded-2xl bg-slate-40 md:col-span-2"
-          >
-            />
+        </div>
+      </section>
+
+      <section class="px-5 pb-14 lg:px-20">
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="rounded-2xl bg-[#0f172a] p-6 text-white">
+            <p class="text-sm uppercase tracking-[0.2em] text-[#bfc2ff]">01</p>
+            <h3 class="mt-4 text-2xl font-bold">Account setup</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-300">
+              Open and manage your account in minutes with a simple, secure
+              onboarding process.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-[#1e293b] p-6 text-white">
+            <p class="text-sm uppercase tracking-[0.2em] text-[#bfc2ff]">02</p>
+            <h3 class="mt-4 text-2xl font-bold">Smart payments</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-300">
+              Pay bills, move money, and schedule transactions without hidden
+              fees or delays.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-[#334155] p-6 text-white">
+            <p class="text-sm uppercase tracking-[0.2em] text-[#bfc2ff]">03</p>
+            <h3 class="mt-4 text-2xl font-bold">Money growth</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-300">
+              Build stronger habits with automated saving, goal tracking, and
+              cash-flow insights.
+            </p>
           </div>
         </div>
       </section>
@@ -118,21 +268,8 @@
                 How do you protect my financial information?
               </h3>
               <p class="text-sm leading-7 text-slate-200">
-                We prioritize your privacy &amp; use strong security practices
-                to help keep your personal &amp; financial information
-                protected.
-              </p>
-            </div>
-            <div
-              class="rounded-2xl border border-white/10 bg-white/10 p-6 backdrop-blur-sm"
-            >
-              <h3 class="mb-3 text-xl font-semibold text-white">
-                Can I trust your financial platform?
-              </h3>
-              <p class="text-sm leading-7 text-slate-200">
-                Absolutely. We believe trust starts with transparency. We
-                clearly explain our services and processes so you can make
-                informed decisions.
+                We use advanced encryption, secure user controls, and continuous
+                monitoring to protect your account information.
               </p>
             </div>
 
@@ -140,19 +277,56 @@
               class="rounded-2xl border border-white/10 bg-white/10 p-6 backdrop-blur-sm"
             >
               <h3 class="mb-3 text-xl font-semibold text-white">
-                How can your platform help me save money?
+                Can I trust your platform?
               </h3>
               <p class="text-sm leading-7 text-slate-200">
-                Our platform gives you a clear view of your spending &amp;
-                financial activity, helping you understand where your money
-                goes.
+                Absolutely. FINAPP is designed for transparency, security, and
+                easy-to-understand financial tools for everyday life.
+              </p>
+            </div>
+
+            <div
+              class="rounded-2xl border border-white/10 bg-white/10 p-6 backdrop-blur-sm"
+            >
+              <h3 class="mb-3 text-xl font-semibold text-white">
+                How can I start saving smarter?
+              </h3>
+              <p class="text-sm leading-7 text-slate-200">
+                Set a savings goal, automate transfers, and monitor your
+                spending trends using the tools built into your account.
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="px-5 py-14 lg:px-20">
+        <div
+          class="rounded-[28px] bg-[#635BFF] px-6 py-10 text-center text-white md:px-12"
+        >
+          <p
+            class="text-sm font-semibold uppercase tracking-[0.25em] text-[#dde0ff]"
+          >
+            Ready to begin?
+          </p>
+          <h2 class="mt-3 text-3xl font-bold md:text-4xl">
+            Start growing your money with FINAPP today
+          </h2>
+          <p class="mx-auto mt-4 max-w-2xl text-base text-[#e9ebff]">
+            Join thousands of users who trust FINAPP for simple banking, secure
+            transfers, and better financial control.
+          </p>
+          <a
+            href="signup.html"
+            class="mt-7 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#635BFF] transition-opacity hover:opacity-90"
+          >
+            Get started free
+          </a>
+        </div>
+      </section>
     </main>
-    <footer class="px-5 pb-12 lg:px-20l bg-[#DEDEDE] p-3 rounded-2x mt-10">
+
+    <footer class="bg-[#f5f5f5] px-5 pb-12 pt-10 lg:px-20">
       <div class="grid gap-8 md:grid-cols-3">
         <div class="flex flex-col items-start gap-5">
           <img
@@ -160,35 +334,42 @@
             src="logo.png"
             alt="FINAPP logo"
           />
-          <h1 class="text-xl font-bold">
+          <h2 class="text-xl font-bold text-slate-950">
             Smart, transparent <br />
-            banking build for <br />
+            banking built for <br />
             your everyday <br />
             life.
-          </h1>
+          </h2>
         </div>
-        <div class="flex flex-col items-start gap-5">
-          <h2 class="font-bold">COMPANY</h2>
 
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">contact</a></li>
+        <div class="flex flex-col items-start gap-5">
+          <h2 class="font-bold text-slate-950">COMPANY</h2>
+          <ul class="space-y-2 text-slate-700">
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="flex flex-col items-start gap-5">
-          <h2 class="font-bold">SERVICES</h2>
 
-          <ul>
+        <div class="flex flex-col items-start gap-5">
+          <h2 class="font-bold text-slate-950">SERVICES</h2>
+          <ul class="space-y-2 text-slate-700">
             <li><a href="#">Smart checking</a></li>
             <li><a href="#">Instant payment</a></li>
             <li><a href="#">Saving vault</a></li>
           </ul>
         </div>
       </div>
-      <div class="flex items-center justify-between mt-12">
+
+      <div
+        class="mt-12 flex flex-col gap-4 border-t border-slate-200 pt-6 text-sm text-slate-600 md:flex-row md:items-center md:justify-between"
+      >
         <p>&copy; 2026 FINAPP. All rights reserved.</p>
-        <img src="frame-5.png" alt="" />
+        <img
+          src="frame-5.png"
+          alt="FINAPP payment partners"
+          class="h-8 w-auto"
+        />
       </div>
     </footer>
   </body>
