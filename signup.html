@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FINAPP | Sign Up</title>
+    <script src="tailwind.js"></script>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <header class="flex items-center gap-6 px-6 py-5 lg:px-12">
+      <a class="shrink-0" href="index.html" aria-label="FINAPP home">
+        <img
+          class="h-10 w-auto object-contain"
+          src="logo.png"
+          alt="FINAPP logo"
+        />
+      </a>
+
+      <nav class="flex flex-1 justify-center" aria-label="Main navigation">
+        <ul
+          class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-slate-600"
+        >
+          <li>
+            <a class="transition-colors hover:text-slate-950" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="transition-colors hover:text-slate-950" href="about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="transition-colors hover:text-slate-950"
+              href="service.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              class="transition-colors hover:text-slate-950"
+              href="contact.html"
+              >Contact</a
+            >
+
+            <a class="transition-colors hover:text-slate-950" href="#"></a>
+          </li>
+        </ul>
+      </nav>
+
+      <a
+        href="signup.html"
+        class="shrink-0 rounded-full bg-[#635BFF] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+      >
+        Sign up
+      </a>
+    </header>
+
+    <main class="px-5 py-12 lg:px-20">
+      <section
+        class="mx-auto max-w-5xl rounded-3xl bg-white p-8 shadow-lg shadow-slate-200/50"
+      >
+        <div class="grid gap-10 md:grid-cols-2">
+          <div>
+            <p
+              class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#635BFF]"
+            >
+              Get started
+            </p>
+            <h1 class="text-3xl font-bold text-slate-950 md:text-4xl">
+              Create your FINAPP account
+            </h1>
+            <p class="mt-4 text-slate-600">
+              Join thousands of customers managing savings, transfers, and daily
+              spending with confidence.
+            </p>
+
+            <ul class="mt-8 space-y-3 text-sm text-slate-700">
+              <li>• Instant account setup</li>
+              <li>• Smart savings and budgeting tools</li>
+              <li>• Secure mobile-first banking</li>
+            </ul>
+          </div>
+
+          <form
+            id="signup-form"
+            class="rounded-2xl border border-slate-200 bg-slate-50 p-6"
+          >
+            <div class="mb-4">
+              <label
+                for="full-name"
+                class="mb-2 block text-sm font-medium text-slate-700"
+                >Full name</label
+              >
+              <input
+                id="full-name"
+                type="text"
+                class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 outline-none ring-0 focus:border-[#635BFF]"
+                placeholder="Jane Doe"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="email"
+                class="mb-2 block text-sm font-medium text-slate-700"
+                >Email address</label
+              >
+              <input
+                id="email"
+                type="email"
+                class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 outline-none ring-0 focus:border-[#635BFF]"
+                placeholder="jane@email.com"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="phone"
+                class="mb-2 block text-sm font-medium text-slate-700"
+                >Phone number</label
+              >
+              <input
+                id="phone"
+                type="tel"
+                class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 outline-none ring-0 focus:border-[#635BFF]"
+                placeholder="+234 800 000 0000"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="password"
+                class="mb-2 block text-sm font-medium text-slate-700"
+                >Password</label
+              >
+              <input
+                id="password"
+                type="password"
+                class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 outline-none ring-0 focus:border-[#635BFF]"
+                placeholder="Create a password"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="w-full rounded-full bg-[#635BFF] px-5 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+            >
+              Sign up now
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
